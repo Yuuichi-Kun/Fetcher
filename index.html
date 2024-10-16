@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Fetch Example</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <video autoplay muted loop id="videoBackground">
+        <source src="ikuyo-dance-bocchi-the-rock-moewalls-com.mp4" type="video/mp4"> <!-- Replace with your video path -->
+        Your browser does not support the video tag.
+      </video>
+    
+    <div class="container mt-5">
+      <h1 class="text-center mb-4 animate__animated animate__backInDown">Fetch Data</h1>
+
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <form id="apiForm">
+            <div class="mb-3">
+              <label for="apiUrl" class="form-label">API Endpoint URL</label>
+              <input
+                type="text"
+                class="form-control"
+                id="apiUrl"
+                placeholder="Enter API URL (e.g., https://api.example.com/data)"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary animate__animated animate__pulse">Fetch Data</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <h3>API Response:</h3>
+          <div id="apiResponse" class="bg-light p-3 border"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

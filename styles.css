@@ -1,0 +1,149 @@
+/* styles.css */
+
+/* Anime-inspired background */
+body {
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #videoBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire screen */
+    z-index: -1; /* Send video behind other elements */
+  }
+
+  /* Container styling with responsive size */
+  .container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border: 2px solid #ff4081;
+    width: 90%;
+    max-width: 1200px; /* Reduced maximum width to avoid wasting space */
+    animation: fadeIn 1s ease-in-out;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Mengganti styling h1 */
+h1 {
+    font-family: 'Mochiy Pop P One', cursive; /* Font anime */
+    font-size: 3.5rem;
+    color: #00ff99; /* Warna hijau neon */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 25px #ff4081; /* Menambahkan efek neon */
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+  
+  /* Customizing button with anime look */
+  button {
+    background: linear-gradient(90deg, #ff4081, #f50057);
+    border: none;
+    padding: 12px 24px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  button:hover {
+    background: linear-gradient(90deg, #ffcc00, #ff4081);
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(255, 192, 203, 0.5);
+  }
+  
+  /* Input field anime-inspired style */
+  input {
+    border: 2px solid #ff4081;
+    border-radius: 15px;
+    padding: 12px; /* Adjusted padding */
+    width: 100%;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+  }
+  
+  input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #ff4081, 0 0 20px #ffcc00;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  /* Enlarged API response box */
+  #apiResponse {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px; /* Slightly reduced padding */
+    border-radius: 20px;
+    max-height: 350px;
+    width: 100%;
+    overflow-y: auto;
+    margin-top: 20px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+  }
+  
+  /* Anime-themed table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.7);
+  }
+  
+  th, td {
+    padding: 15px; /* Reduced padding to fit more content */
+    text-align: center;
+    font-size: 16px; /* Adjusted font size */
+    color: #ffffff;
+    border: 1px solid rgba(255, 105, 180, 0.6);
+  }
+  
+  th {
+    background-color: #ff4081;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 3px solid #ffcc00;
+  }
+  
+  td {
+    background-color: rgba(255, 105, 180, 0.3);
+    transition: background-color 0.3s ease;
+  }
+  
+  td:hover {
+    background-color: rgba(255, 105, 180, 0.6);
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
